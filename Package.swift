@@ -9,12 +9,8 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(
-            name: "Bugsee",
-            targets: ["Bugsee", "BugseeSwiftUI"]),
-        .library(
-            name: "BugseeSwiftUI",
-            targets: ["BugseeSwiftUI"])
+        .library(name: "Bugsee", targets: ["Bugsee"]),
+        .library(name: "BugseeSwiftUI", targets: ["Bugsee", "BugseeSwiftUI"])
     ],
     targets: [
         .binaryTarget(
