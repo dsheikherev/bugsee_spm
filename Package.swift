@@ -11,7 +11,10 @@ let package = Package(
     products: [
         .library(
             name: "Bugsee",
-            targets: ["Bugsee", "BugseeSwiftUI"])
+            targets: ["Bugsee", "BugseeSwiftUI"]),
+        .library(
+            name: "BugseeSwiftUI",
+            targets: ["BugseeSwiftUI"])
     ],
     targets: [
         .binaryTarget(
